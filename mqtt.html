@@ -412,7 +412,8 @@ function updateUI(d) {
   setText('valRssi', (d.rssi||'—')+' dBm'); setText('valHeap', d.heap ? (Math.round(d.heap/1024)+' KB') : '—');
   setText('valTemp', (d.temp||'—')+' °C'); setText('valCount', d.count??'—');
   setText('valDate', d.date||'—'); setText('valTime', d.time||'—'); setText('valFw', d.firmware||'—');
-  if (d.matr) document.getElementById('headerMatr').textContent = 'Matricola: ' + d.matr;
+  //if (d.matr) document.getElementById('headerMatr').textContent = 'Matricola: ' + d.matr;
+  if (d.matr) document.getElementById('headerMatr').textContent = 'Device: ' + d.matr;
   for (let i=0;i<=4;i++) { const v=d['out'+i],ch=document.getElementById('chipOut'+i); if(ch&&v!==undefined){const on=(v===1||v===true);ch.className='output-chip '+(on?'on':'off');ch.querySelector('.pin-val').textContent=on?'ON':'OFF';} }
   updTog('toggleX1','stateX1',d.x1); updTog('toggleX2','stateX2',d.x2);
   document.getElementById('lastUpdate').textContent = new Date().toLocaleTimeString('it-IT');
