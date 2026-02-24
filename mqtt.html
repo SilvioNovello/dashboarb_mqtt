@@ -48,11 +48,16 @@
   .nav-btn { background: none; border: 1px solid var(--border); border-radius: 8px; color: var(--text-secondary); padding: 6px 10px; cursor: pointer; font-size: 1em; transition: all 0.2s; }
   .nav-btn:hover { border-color: var(--accent-blue); color: var(--accent-blue); }
   .nav-btn.active { border-color: var(--accent-blue); color: var(--accent-blue); background: rgba(59,130,246,0.1); }
-
-  .page { display: none; max-width: 900px; margin: 0 auto; padding: 20px 16px; flex-direction: column; gap: 14px; }
+  
+   /* PAGES */
+  .page { display: none; max-width: 800px; margin: 0 auto; padding: 14px 16px; flex-direction: column; gap: 14px; }
   .page.active { display: flex; }
+
+  /* CARDS */
   .card { background: var(--bg-card); border: 1px solid var(--border); border-radius: 12px; padding: 18px; }
   .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 14px; font-weight: 600; font-size: 0.82em; color: var(--text-secondary); text-transform: uppercase; letter-spacing: 0.08em; }
+   
+  /* TELEMETRY */
   .tele-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)); gap: 10px; }
   .tele-item { background: rgba(255,255,255,0.02); border: 1px solid var(--border); border-radius: 8px; padding: 12px; }
   .tele-label { font-size: 0.68em; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.06em; font-family: var(--mono); }
@@ -60,6 +65,8 @@
   .tele-value.highlight-green { color: var(--accent-green); }
   .tele-value.highlight-amber { color: var(--accent-amber); }
   .tele-value.highlight-cyan { color: var(--accent-cyan); }
+  
+  /* OUTPUTS */
   .output-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(85px, 1fr)); gap: 8px; }
   .output-chip { text-align: center; padding: 10px 6px; border-radius: 8px; border: 1px solid var(--border); font-family: var(--mono); font-size: 0.72em; }
   .output-chip .pin-name { color: var(--text-dim); font-size: 0.85em; margin-bottom: 3px; }
@@ -67,6 +74,8 @@
   .output-chip.on { background: rgba(16,185,129,0.12); border-color: var(--accent-green); }
   .output-chip.on .pin-val { color: var(--accent-green); }
   .output-chip.off .pin-val { color: var(--text-dim); }
+
+  /* CONTROLS */
   .ctrl-row { display: flex; align-items: center; justify-content: space-between; padding: 11px 0; border-bottom: 1px solid rgba(255,255,255,0.04); }
   .ctrl-row:last-child { border-bottom: none; }
   .ctrl-label { font-weight: 500; display: flex; align-items: center; gap: 10px; }
@@ -84,10 +93,14 @@
   .btn-danger { border-color: #7f1d1d; color: var(--accent-red); }
   .btn-danger:hover { background: rgba(239,68,68,0.1); border-color: var(--accent-red); }
   .btn-green { background: var(--accent-green); color: white; border-color: var(--accent-green); }
+
+  /* LOG */
   .log-area { background: #050810; border: 1px solid var(--border); border-radius: 8px; padding: 10px; max-height: 160px; overflow-y: auto; font-family: var(--mono); font-size: 0.7em; line-height: 1.7; color: var(--text-dim); }
   .log-area .log-time { color: var(--accent-cyan); } .log-area .log-in { color: var(--accent-green); }
   .log-area .log-out { color: var(--accent-amber); } .log-area .log-err { color: var(--accent-red); }
   .last-update { text-align: center; font-size: 0.7em; color: var(--text-dim); font-family: var(--mono); padding: 6px; }
+
+  /* SETTINGS PAGE */
   .settings-group { margin-bottom: 18px; }
   .settings-group-title { font-size: 0.8em; color: var(--accent-blue); font-family: var(--mono); margin-bottom: 8px; text-transform: uppercase; }
   .settings-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 8px 14px; }
