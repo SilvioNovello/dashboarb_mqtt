@@ -113,6 +113,7 @@
     <div class="login-error" id="loginError"></div>
   </div>
 </div>
+<div class="last-update">Created by S.N. 🇮🇹 </div>
 
 <!-- ===== HEADER ===== -->
 <div class="header">
@@ -158,13 +159,14 @@
     <div class="ctrl-row"><div class="ctrl-label">Uscita X1 <span class="ctrl-state off" id="stateX1">OFF</span></div><label class="toggle"><input type="checkbox" id="toggleX1" onchange="sendToggle('toggleX1',this.checked)"><div class="toggle-track"></div><div class="toggle-thumb"></div></label></div>
     <div class="ctrl-row"><div class="ctrl-label">Uscita X2 <span class="ctrl-state off" id="stateX2">OFF</span></div><label class="toggle"><input type="checkbox" id="toggleX2" onchange="sendToggle('toggleX2',this.checked)"><div class="toggle-track"></div><div class="toggle-thumb"></div></label></div>
     <div class="ctrl-row"><div class="ctrl-label">Reboot Counter</div><button class="btn" onclick="sendCmd({action:'resetCount'})">↺ Reset</button></div>
-    <div class="ctrl-row"><div class="ctrl-label" style="color:var(--accent-red)">Riavvio ESP32</div><button class="btn btn-danger" onclick="if(confirm('Riavviare ESP32?'))sendCmd({action:'reboot'})">⏻ Reboot</button></div>
+    <!--<div class="ctrl-row"><div class="ctrl-label" style="color:var(--accent-red)">Riavvio ESP32</div><button class="btn btn-danger" onclick="if(confirm('Riavviare ESP32?'))sendCmd({action:'reboot'})">⏻ Reboot</button></div>-->
   </div>
   <div class="card">
     <div class="card-header"><span>📋</span> Log MQTT <span style="flex:1"></span><button class="btn" onclick="document.getElementById('logArea').innerHTML=''" style="padding:3px 8px;font-size:0.7em">Pulisci</button></div>
     <div class="log-area" id="logArea"></div>
   </div>
   <div class="last-update">Ultimo aggiornamento: <span id="lastUpdate">mai</span></div>
+  <div class="last-update">Created by S.N. 🇮🇹 </div>
 </div>
 
 <!-- ===== PAGINA SETTINGS ===== -->
@@ -193,6 +195,7 @@
     <div class="settings-status" id="settingsStatus"></div>
   </div>
 </div>
+<div class="last-update">Created by S.N. 🇮🇹 </div>
 
 <script>
 // ================================================
